@@ -1,7 +1,7 @@
 const TOKEN_KEY = "loginUser"
 
 function setToken(value) {
-    localStorage.setItem(TOKEN_KEY, value)
+    localStorage.setItem(TOKEN_KEY, JSON.stringify(value))
 }
 
 function getToken() {
